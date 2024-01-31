@@ -1,0 +1,117 @@
+:root{
+    --color: black;
+    --background-color: white;
+    --placeholderColor: grey;
+    --submitLoginColor: blueviolet
+}
+
+.dark{
+    --color: white;
+    --background-color: black;
+    --placeholderColor: grey;
+    --submitLoginColor: blueviolet
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--color);
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+i{
+    color: var(--color);
+}
+.full-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.full-screen{
+    padding: 30px;
+    
+    border-radius: 15px;
+    box-shadow: 0px 1px 8px 2px var(--color);
+    
+}
+
+.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+hr{
+    color: var(--color);
+    width: 80px;
+}
+
+form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.email, .password{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.email, .password label{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.email  input{
+    padding: 7px 18px;
+    border-radius: 8px;
+}
+.email input::placeholder{
+    text-align: left;
+    font-size: 12px;
+    color: var(--placeholderColor);
+}
+.password  input{
+    padding: 7px 18px;
+    border-radius: 8px;
+}
+.password input::placeholder{
+    text-align: left;
+    font-size: 12px;
+    color: var(--placeholderColor);
+}
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -15px;
+}
+.btnLogin{
+    padding: 7px 18px;
+    border-radius: 12px;
+    color: var(--background-color);
+    font-weight: 900;
+    background-color: var(--submitLoginColor);
+    border: 1px solid var(--submitLoginColor) ;
+}
+.lightTheme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lightTheme p{
+    font-size: 24px;
+    color: var(--color);
+}
